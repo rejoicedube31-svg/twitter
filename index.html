@@ -3,9 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter</title>
+    <title>X</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.png">
 </head>
 <body>
-    <h1>This is my Twitter Project</h1>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div>
+            <div class="logo">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg>
+            </div>
+
+            <div class="nav-links">
+                <a href="https://x.com/home" class="nav-btn active" target="_blank">
+                    <i class="material-symbols-outlined">home</i><span>Home</span>
+                </a>
+                <a href="https://x.com/explore" class="nav-btn">
+                    <i class="material-symbols-outlined">explore</i><span>Explore</span>
+                </a>
+                <a href="https://x.com/notifications" class="nav-btn">
+                    <i class="material-symbols-outlined">notifications</i><span>Notifications</span>
+                </a>
+
+                <a href="https://x.com/i/connect_people" class="nav-btn">
+                    <i class="material-symbols-outlined">person_add</i><span>Follow</span>
+                </a>
+
+                <a href="https://x.com/i/chat" class="nav-btn">
+                    <i class="material-symbols-outlined">mail</i><span>Chat</span>
+                </a>
+
+                <a href="https://x.com/i/bookmarks" class="nav-btn">
+                    <i class="material-symbols-outlined">bookmarks</i><span>Bookmarks</span>
+                </a>
+
+                <a href="https://x.com/i/jf/creators/studio" class="nav-btn">
+                    <i class="material-symbols-outlined">rocket_launch</i><span>Creator Studio</span>
+                </a>
+
+                <a href="https://x.com/DubeRejoic3296" class="nav-btn">
+                    <i class="material-symbols-outlined">person</i><span>Profile</span>
+                </a>
+
+                <a href="#" class="nav-btn">
+                    <i class="material-symbols-outlined">more_horiz</i><span>More</span>
+                </a>
+
+                <button class="post-button" onclick="window.location.href='https://x.com/compose/post'"><h2>Post</h2></button>
+            </div>
+        </div>
+
+        <div class="profile">
+            <i class="material-symbols-outlined">account_circle</i>
+            <div>
+                <div><b>Rejoice Dube</b></div>
+                <div>rejoicedube31@gmail.com<i class="material-symbols-outlined">more_horiz</i></div>      
+            </div>
+        </div>
+    </nav>
+
+    <!-- FEED -->
+    <main class="feed">
+        <div class="feed-header">
+            <button class="active"><span>For you</span></button>
+            <button><span>Following</span></button>
+        </div>
+
+            <!-- Composer -->
+    <div class="composer">
+        <i class="material-symbols-outlined avatar">account_circle</i>
+
+        <div class="composer-body">
+            <input type="text" placeholder="What's happening?" />
+
+            <div class="composer-actions">
+                <div class="icons">
+                    <i class="material-symbols-outlined">image</i>
+                    <i class="material-symbols-outlined">gif_box</i>
+                    <i class="material-symbols-outlined">sentiment_satisfied</i>
+                    <i class="material-symbols-outlined">location_on</i>
+                </div>
+
+                <button class="post-btn">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Card -->
+    <div class="post-card">
+        <div class="post-header">
+            <i class="material-symbols-outlined profile-img">account_circle</i>
+
+            <div class="user-info">
+                <span class="name">President Vladimir Putin Parody</span>
+                <span class="handle">@VladimirPutin · Mar 25</span>
+            </div>
+
+            <i class="material-symbols-outlined menu">more_horiz</i>
+        </div>
+
+        <div class="post-content">
+            CONFIRMED BY ISRAEL 🇮🇱 <br>
+            Netanyahu is official de...
+        </div>
+
+        <img src="./resources/card1.png" class="post-image" alt="post image">
+
+        <div class="post-actions">
+            <span><i class="material-symbols-outlined">chat_bubble</i> 177</span>
+            <span><i class="material-symbols-outlined">repeat</i> 279</span>
+            <span><i class="material-symbols-outlined">favorite</i> 1.8K</span>
+            <span><i class="material-symbols-outlined">bar_chart</i> 3.6M</span>
+            <span><i class="material-symbols-outlined">bookmark</i></span>
+        </div>
+    </div>
+
+    <div class="post-card">
+        <div class="post-header">
+            <i class="material-symbols-outlined profile-img">account_circle</i>
+
+            <div class="user-info">
+                <span class="name">Inspiration Wiz</span>
+                <span class="handle">@Inspirationwiz · Mar 25</span>
+            </div>
+
+            <i class="material-symbols-outlined menu">more_horiz</i>
+        </div>
+
+        <div class="post-content">
+            42 Cheat Codes I Wish I knew At 22:
+        </div>
+
+        <img src="./resources/card2.png" class="post-image" alt="post image">
+
+        <div class="post-actions">
+            <span><i class="material-symbols-outlined">chat_bubble</i> 2</span>
+            <span><i class="material-symbols-outlined">repeat</i> 143</span>
+            <span><i class="material-symbols-outlined">favorite</i> 760</span>
+            <span><i class="material-symbols-outlined">bar_chart</i> 125K</span>
+            <span><i class="material-symbols-outlined">bookmark</i></span>
+        </div>
+    </div>
+
+    <div class="post-card">
+        <div class="post-header">
+            <i class="material-symbols-outlined profile-img">account_circle</i>
+
+            <div class="user-info">
+                <span class="name">Historic Vids</span>
+                <span class="handle">@historymemes · Mar 25</span>
+            </div>
+
+            <i class="material-symbols-outlined menu">more_horiz</i>
+        </div>
+
+        <div class="post-content">
+            The current generation probably doesn't even know that there are two <br> people in this picture.
+        </div>
+
+        <img src="./resources/card3.png" class="post-image" alt="post image">
+
+        <div class="post-actions">
+            <span><i class="material-symbols-outlined">chat_bubble</i> 71</span>
+            <span><i class="material-symbols-outlined">repeat</i> 737</span>
+            <span><i class="material-symbols-outlined">favorite</i> 6.9K</span>
+            <span><i class="material-symbols-outlined">bar_chart</i> 1.4M</span>
+            <span><i class="material-symbols-outlined">bookmark</i></span>
+        </div>
+    </div>
+
+    <div class="post-card">
+        <div class="post-header">
+            <i class="material-symbols-outlined profile-img">account_circle</i>
+
+            <div class="user-info">
+                <span class="name">Psyche Wizard</span>
+                <span class="handle">@PsycheWizard · Mar 25</span>
+            </div>
+
+            <i class="material-symbols-outlined menu">more_horiz</i>
+        </div>
+
+        <div class="post-content">
+            6 Business ideas that can change your life: <br> 
+            1.
+        </div>
+
+        <img src="./resources/card4.png" class="post-image" alt="post image">
+
+        <div class="post-actions">
+            <span><i class="material-symbols-outlined">chat_bubble</i> 714</span>
+            <span><i class="material-symbols-outlined">repeat</i> 1.1K</span>
+            <span><i class="material-symbols-outlined">favorite</i> 12K</span>
+            <span><i class="material-symbols-outlined">bar_chart</i> 1.2M</span>
+            <span><i class="material-symbols-outlined">bookmark</i></span>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- RIGHT PANEL -->
+
+    <aside class="right-panel">
+
+        <div class="rp-search-box">
+    <i class="material-symbols-outlined">search</i>
+    <input type="text" placeholder="Search">
+</div>
+
+<!-- PREMIUM -->
+<div class="rp-card">
+    <div class="rp-premium-header">
+        <h3>Subscribe to Premium</h3>
+        <span class="rp-badge">50% off</span>
+    </div>
+
+    <p>
+        Get rid of ads, see your analytics, boost your replies and unlock 20+ features.
+    </p>
+
+    <button class="rp-subscribe-btn">Subscribe</button>
+</div>
+
+<!-- NEWS -->
+<div class="rp-card">
+    <div class="rp-news-header">
+        <h3>Today's News</h3>
+        <i class="material-symbols-outlined">close</i>
+    </div>
+
+    <div class="rp-news-item">
+        <div class="rp-news-title">
+            Thousands March in Durban on Immigration Anniversary
+        </div>
+        <div class="rp-news-meta">
+            1 day ago · News · 43.8K posts
+        </div>
+    </div>
+
+    <div class="rp-news-item">
+        <div class="rp-news-title">
+            France Withdraws G7 Invitation to South Africa's Ramaphosa Under US Pressure
+        </div>
+        <div class="rp-news-meta">
+            2 days ago · News · 14.7K posts
+        </div>
+    </div>
+
+    <div class="rp-news-item">
+        <div class="rp-news-title">
+            Scammer's Taxi Change Trick Backfires in Chaotic Confrontation
+        </div>
+        <div class="rp-news-meta">
+            4 hours ago · Other · 1,447 posts
+        </div>
+    </div>
+</div>
+
+    <!-- Trends -->
+    <div class="panel-card">
+        <h3>What's happening</h3>
+
+        <div class="trend-item">
+            <div>
+                <span class="trend-meta">Only on X · Trending</span>
+                <div class="trend-title">#UthandoNesthembu</div>
+            </div>
+            <i class="material-symbols-outlined">more_horiz</i>
+        </div>
+
+        <div class="trend-item">
+            <div>
+                <span class="trend-meta">Trending in South Africa</span>
+                <div class="trend-title">Sotheni</div>
+            </div>
+            <i class="material-symbols-outlined">more_horiz</i>
+        </div>
+
+        <div class="trend-item">
+            <div>
+                <span class="trend-meta">Trending in South Africa</span>
+                <div class="trend-title">#FlipTheFlag</div>
+            </div>
+            <i class="material-symbols-outlined">more_horiz</i>
+        </div>
+
+        <div class="trend-item">
+            <div>
+                <span class="trend-meta">Politics · Trending</span>
+                <div class="trend-title">Winnie Mandela</div>
+            </div>
+            <i class="material-symbols-outlined">more_horiz</i>
+        </div>
+
+        <a href="#" class="show-more">Show more</a>
+    </div>
+
+    <!-- Who to follow -->
+    <div class="panel-card">
+        <h3>Who to follow</h3>
+
+        <div class="follow-item">
+            <i class="material-symbols-outlined profile-icon">account_circle</i>
+            <div class="follow-info">
+                <div class="follow-name">Becker Friedman Instit...</div>
+                <div class="follow-handle">@BeckerFriedman</div>
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-item">
+            <i class="material-symbols-outlined profile-icon">account_circle</i>
+            <div class="follow-info">
+                <div class="follow-name">Barry Eichengreen</div>
+                <div class="follow-handle">@B_Eichengreen</div>
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-item">
+            <i class="material-symbols-outlined profile-icon">account_circle</i>
+            <div class="follow-info">
+                <div class="follow-name">Taka Sande</div>
+                <div class="follow-handle">@TakaSande</div>
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+
+        <a href="https://x.com/i/connect_people?" class="show-more">Show more</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-links">
+        <span>Terms of Service |</span>
+        <span>Privacy Policy |</span>
+        <span>Cookie Policy |</span>
+        <span>Accessibility |</span>
+        <span>Ads info |</span>
+        <span>More</span>
+        <span>© 2026 X Corp.</span>
+    </div>
+
+</aside>
+
+</div>
+<script src="script.js"></script>
+
 </body>
 </html>
